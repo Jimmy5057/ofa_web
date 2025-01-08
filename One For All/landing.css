@@ -1,0 +1,503 @@
+@media (max-height: 576px) {
+
+    .content{
+        padding-top: 200px !important;
+    }
+}
+
+@media (max-height: 450px) {
+
+    .content{
+        padding-top: 100px !important;
+    }
+}
+
+
+@font-face {
+    font-family: 'Lequire';
+    src: url('fonts/Lequire.otf') format('opentype');
+    font-weight: normal; /* Adjust if you have multiple weights */
+    font-style: normal;  /* Adjust if you have italic or other styles */
+}
+
+@font-face {
+    font-family: 'Votage';
+    src: url('fonts/votage.otf') format('opentype');
+    font-weight: normal; /* Adjust if you have multiple weights */
+    font-style: normal;  /* Adjust if you have italic or other styles */
+}
+
+.grey-gradient-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(255, 254, 254, 0.7), rgba(0, 0, 0, 0.3)); /* Grey gradient */
+    z-index: -9999;
+}
+
+.site-header {
+    font-family: 'Lequire';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid; /* Adjust border width */
+    border-image: linear-gradient(90deg, #45F5A9, #00ECFD) 1;
+    z-index: 2;
+    height: 75px;
+}
+
+.header{
+    display: flex; 
+    padding: 20px 155px; 
+    justify-content: space-between;
+}
+
+.header-title{
+    font-family: "Votage";
+    width: 130px;
+    height: 20px;
+    color: #E7FFF9;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.started{
+    padding: 20px 155px; 
+    position: absolute; 
+    z-index: 2; top: 75px; 
+    display: flex; 
+    justify-content: end; 
+    width: -webkit-fill-available;
+}
+
+.get-started{
+    font-family: "DM Sans";
+    padding: 10px 25px;
+    font-size: 13px; 
+    background: linear-gradient(90deg, #45F5A9, #00ECFD);
+    z-index: 2;
+}
+
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 120vh; /* Full viewport height */
+}
+
+.video-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(32, 138, 132, 0.5));
+    z-index: -1;
+}
+
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 155px;
+    padding-top: 300px;
+}
+
+.sub-title{
+    display: flex;
+    flex-direction: column;
+    font-size: 19.5px; 
+    background: linear-gradient(90deg, #45F5A9, #00ECFD);
+    width: fit-content;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title{
+    font-family: "Votage";
+    font-size: 63px;
+    color: #E7FFF9;
+}
+
+.box-container{
+    margin-top: 90px; 
+    display: flex;
+}
+
+.middle-box{
+    border-image: linear-gradient(90deg, #45F5A9, #00ECFD) 1;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 0px 50px;
+}
+
+.box-title{
+    font-size: 23px;
+    background: linear-gradient(90deg, #45F5A9, #00ECFD);
+    width: fit-content;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box-sub-title{
+    font-size: 14px;
+    color: #E7FFF9;
+}
+
+.first-box{
+    padding: 0px 50px 0px 0px;
+}
+
+.last-box{
+    padding: 0px 00px 0px 50px;
+}
+
+.company-section {
+    background: linear-gradient(90deg, #45F5A9, #00ECFD);
+    text-align: center;
+}
+
+.content-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .green-circle1 {
+    margin-top: 70px;
+    position: absolute;
+    right: -150px; /* Moves the circle to the right so only half is visible */
+    width: 400px; /* Adjust size as needed */
+    height: 400px; /* Adjust size as needed */
+    background: radial-gradient(
+      circle,
+      rgba(0, 236, 253, 0) 40%,
+      rgba(69, 245, 169, 0.5) 100%
+    );
+    border-radius: 50%; /* Makes it circular */
+    filter: blur(10px); /* Adds a soft blur */
+    z-index: -1; /* Puts the circle behind other content */
+    overflow: hidden;
+  }
+
+  .green-circle2 {
+    margin-top: 550px;
+    position: absolute;
+    left: -80px;
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    background: radial-gradient(
+      circle,
+      rgba(0, 236, 253, 0) 40%,
+      rgba(69, 245, 169, 0.5) 100%
+    );
+    border-radius: 50%; /* Makes it circular */
+    filter: blur(10px); /* Adds a soft blur */
+    z-index: -1; /* Puts the circle behind other content */
+    overflow: hidden;
+  }
+
+
+  .green-circle3 {
+    margin-top: 1150px;
+    position: absolute;
+    right: -80px;
+    width: 700px; /* Adjust size as needed */
+    height: 700px; /* Adjust size as needed */
+    background: radial-gradient(
+      circle,
+      rgba(0, 236, 253, 0) 40%,
+      rgba(69, 245, 169, 0.5) 100%
+    );
+    border-radius: 50%; /* Makes it circular */
+    filter: blur(10px); /* Adds a soft blur */
+    z-index: -1; /* Puts the circle behind other content */
+    overflow: hidden;
+  }
+
+  .green-circle4 {
+    margin-top: 1650px;
+    position: absolute;
+    left: -80px;
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    background: radial-gradient(
+      circle,
+      rgba(0, 236, 253, 0) 40%,
+      rgba(69, 245, 169, 0.5) 100%
+    );
+    border-radius: 50%; /* Makes it circular */
+    filter: blur(10px); /* Adds a soft blur */
+    z-index: -1; /* Puts the circle behind other content */
+    overflow: hidden;
+  }
+
+.green-circle5 {
+    margin-top: 2500px;
+    position: absolute;
+    left: -80px;
+    width: 600px; /* Adjust size as needed */
+    height: 600px; /* Adjust size as needed */
+    background: radial-gradient(
+        circle,
+        rgba(0, 236, 253, 0) 40%,
+        rgba(69, 245, 169, 0.5) 100%
+    );
+    border-radius: 50%; /* Makes it circular */
+    filter: blur(10px); /* Adds a soft blur */
+    z-index: -1; /* Puts the circle behind other content */
+    overflow: hidden;
+}
+
+.carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+    }
+
+    .carousel-inner{
+        padding: 20px 160px 20px 160px;
+    }
+
+.about-us-container{
+    margin: 70px 200px 0px 200px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+  }
+
+  .about-us{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: "Votage";
+  }
+
+  .about-us-sub-title{
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 600;
+    opacity: 0.3;
+    text-align: center;
+  }
+
+  .about-us-text{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #626262;
+    text-align: center;
+  }
+
+  /* Circle Container */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0; /* Control overlap manually */
+    margin-top: 40px;
+    position: relative;
+    flex-wrap: nowrap; /* Prevent wrapping on large screens */
+    overflow: hidden; /* Ensure no overflow */
+  }
+  
+  /* Individual Circle Styling */
+  .circle {
+    background: var(--Color, rgba(0, 34, 36, 0.44));
+    border-radius: 50%;
+    width: clamp(300px, 30vw, 600px); /* Dynamically scale with viewport width */
+    height: clamp(300px, 30vw, 600px); /* Same as width for a perfect circle */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative; /* Ensure circles can overlap */
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(56, 201, 138, 1);
+  }
+  
+  /* Adjust Overlap for Circles */
+  .circle:nth-child(1) {
+    margin-right: -60px; /* Adjust overlap dynamically */
+    z-index: 3; /* Ensure it's on top of the second */
+  }
+  
+  .circle:nth-child(2) {
+    margin-right: -60px; /* Adjust overlap dynamically */
+    z-index: 2; /* Ensure it's on top of the third but behind the first */
+  }
+  
+  .circle:nth-child(3) {
+    z-index: 1; /* Ensure it's the lowest in the stack */
+  }
+  
+  /* Circle Content Styling */
+  .circle img {
+    width: 50%; /* Icon size relative to the circle */
+    height: auto;
+  }
+  
+  .circle-title {
+    font-family: "Votage";
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    color: rgba(35, 35, 35, 1);
+  }
+  
+  .circle-sub-title {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    background: linear-gradient(90deg, #45F5A9, #00ECFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .slide-background{
+    width: 100%;
+    height: 100%;
+  }
+
+  .smart-watch-title{
+    font-family: "Votage";
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+@media (max-width: 1050px) {
+    .circle:nth-child(1) {
+        margin-right: -50px;
+    }   
+    
+    .circle:nth-child(2) {
+        margin-right: -50px;
+    }
+}
+
+@media (max-width: 965px) {
+
+    .box-container{
+        margin-top: 70px;
+    }
+}
+
+
+@media (max-width: 765px) {
+
+    .started{
+        padding: 25px 50px; 
+    }
+
+    .header {
+        padding: 20px 50px;
+    }
+
+    .content{
+        padding-left: 50px;
+        padding-top: 300px;
+    }
+
+    .circle-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+      
+    /* Adjust Overlap for Circles */
+    .circle:nth-child(1) {
+        z-index: 4;
+        margin-right: 0px;
+    }   
+    
+    .circle:nth-child(2) {
+        z-index: 4;
+        margin-top: 20px;
+        margin-right: 0px;
+    }
+
+    .circle:nth-child(3) {
+        z-index: 4;
+        margin-top: 20px;
+    }
+
+    .smart-watch-title{
+        font-size: 30px;
+    }
+
+    .smart-watch-img img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .carousel-inner{
+        padding: 20px 60px 20px 60px;
+    }
+
+    .box-container{
+        margin-top: 50px;
+    }
+
+    .about-us-container{
+        margin: 70px 100px 0px 100px;;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .site-header{
+        height: 100px;
+    }
+
+    .header-title{
+        margin-left: 0px;
+    }
+
+    .started{
+        padding: 40px 50px; 
+        
+    }
+
+    .title{
+        font-size: 36px;
+    }
+
+    .content{
+        padding-left: 15px;
+        padding-top: 0;
+    }
+
+    .middle-box{
+        padding: 0px 10px;
+    }
+
+    .first-box{
+        padding: 0px 10px 0px 0px;
+    }
+    
+    .last-box{
+        padding: 0px 10px 0px 10px;
+    }
+
+    .about-us-container{
+        margin: 70px 50px 0px 50px; 
+    }
+
+    .smart-watch-title{
+        font-size: 25px;
+    }
+
+    .carousel-inner{
+        padding: 20px;
+    }
+
+}
+
+
+
