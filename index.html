@@ -217,14 +217,21 @@
             for (let i = 0; i < images.length; i += imagesPerSlide) {
             const slideImages = images.slice(i, i + imagesPerSlide);
             const slide = document.createElement("div");
+
+            const isSingleImage = slideImages.length === 1;
+
             slide.className = `carousel-item ${i === 0 ? "active" : ""}`;
             slide.innerHTML = `
-                <div class="d-flex justify-content-between">
+                <div class="d-flex ${isSingleImage ? "justify-content-center align-items-center" : "justify-content-between"}">
                 ${slideImages
                     .map(
                     (image) =>
-                        `<a href="${image.link}" class="flex-fill text-center d-flex align-items-center">
-                        <img src="${image.src}" class="mx-auto d-block" style="width: ${image.width}px; height: ${image.height}px;" alt="Image">
+                        `<a href="${image.link}" class="d-flex text-center d-flex align-items-center">
+                            <div class="image-container">
+                                <img src="${image.src}" 
+                                     class="img-fluid" 
+                                     alt="Image">
+                            </div>
                         </a>`
                     )
                     .join("")}
